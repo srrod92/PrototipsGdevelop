@@ -330,6 +330,84 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
           "name": "CantoraOne-Regular.ttf"
         }
+      },
+      {
+        "file": "futuristic-heartbeat-60-bpm-7074.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "futuristic-heartbeat-60-bpm-7074.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "heart-beat-137135.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "heart-beat-137135.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "heart-beat-1371352.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "heart-beat-1371352.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "xorazon.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "xorazon.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "exclamation-mark-98739_1280.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "exclamation-mark-98739_1280.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "signo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "signo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "exiting-spicatos.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "exiting-spicatos.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "corazon.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "corazon.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1010,7 +1088,7 @@
           "width": 300,
           "x": 180,
           "y": 398,
-          "zOrder": 2,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1023,9 +1101,9 @@
           "name": "Guardia",
           "persistentUuid": "16c96d04-5330-47fe-a6f4-b3b059371e68",
           "width": 99,
-          "x": 596,
-          "y": 408,
-          "zOrder": 3,
+          "x": 271,
+          "y": 538,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1113,8 +1191,8 @@
           "name": "Cono",
           "persistentUuid": "6d2d5c7a-6867-42b5-a5ff-05907e646d07",
           "width": 363,
-          "x": 600,
-          "y": 410,
+          "x": 610,
+          "y": 537,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1131,6 +1209,21 @@
           "x": 300,
           "y": 326,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 85,
+          "layer": "",
+          "name": "SignoAlerta",
+          "persistentUuid": "fd3a741c-d31a-4d23-aa76-beee39151eff",
+          "width": 85,
+          "x": 657,
+          "y": 318,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1259,10 +1352,10 @@
           "effects": [],
           "behaviors": [
             {
+              "acceleration": 400,
               "deceleration": 1000,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "acceleration": 200,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -1286,7 +1379,13 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "Assets\\Guardia\\guardia.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Alerta",
+                          "x": 251.5,
+                          "y": 0
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 486.5,
@@ -1606,6 +1705,47 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "SignoAlerta",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "signo.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1690,6 +1830,26 @@
               "parameters": [
                 "BotonInteraccion"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SignoAlerta"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "exiting-spicatos.ogg",
+                "yes",
+                "50",
+                "1"
+              ]
             }
           ]
         },
@@ -1704,7 +1864,7 @@
                 "",
                 "\"RelojGuardia\"",
                 ">",
-                "5"
+                "7"
               ]
             }
           ],
@@ -1762,6 +1922,38 @@
                 "Cono",
                 "Guardia",
                 "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Cono",
+                "=",
+                "125"
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "SignoAlerta",
+                "Guardia"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutourPos"
+              },
+              "parameters": [
+                "SignoAlerta",
+                "Guardia.PointX(\"Alerta\")",
+                "Guardia.PointY(\"Alerta\")",
+                "60",
                 "0"
               ]
             }
@@ -1871,6 +2063,16 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Personaje",
+                "Escondido",
+                "False"
+              ]
             }
           ],
           "actions": [
@@ -1894,20 +2096,31 @@
                 "=",
                 "3"
               ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Cono",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "SignoAlerta",
+                ""
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Always"
-              },
-              "parameters": [
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "Distance"
@@ -1947,6 +2160,40 @@
           "conditions": [
             {
               "type": {
+                "value": "BuiltinCommonInstructions::Not"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Personaje",
+                    "Planta",
+                    "200",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BotonInteraccion"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Distance"
               },
               "parameters": [
@@ -1964,21 +2211,21 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "e"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ObjectVariableAsBoolean"
                   },
                   "parameters": [
                     "Personaje",
                     "Escondido",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "e"
                   ]
                 }
               ]
@@ -2016,13 +2263,74 @@
                 "Escondido",
                 "True"
               ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Personaje",
+                "=",
+                "200"
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Personaje",
+                "Escondido",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Personaje",
+                "TopDownMovement",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Personaje",
+                "Escondido",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Personaje",
+                "=",
+                "255"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
