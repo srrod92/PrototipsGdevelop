@@ -453,11 +453,448 @@
         "name": "Assets\\Menu\\NewSprite-1-3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Puerta.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Puerta",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Pared",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 5,
+          "impassable": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "aaa.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Puerta",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "abierta",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 5,
+          "impassable": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "Puerta",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Puerta",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Guardia",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Alerta",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "deceleration": 1000,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "rotateObject": false,
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Guardia\\guardia.png",
+                  "points": [
+                    {
+                      "name": "Alerta",
+                      "x": 251.5,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 486.5,
+                    "y": 291
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 487,
+                    "y": 297.5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Personaje",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Escondido",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 300,
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "rotateObject": false,
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\MC\\ladron.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Cono",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Normal",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cono amarillo2.png2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 249,
+                        "y": 0
+                      },
+                      {
+                        "x": 353.5,
+                        "y": 387
+                      },
+                      {
+                        "x": 143.5,
+                        "y": 387
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AlertaBaja",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cono amarillo3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 250.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 356,
+                        "y": 387
+                      },
+                      {
+                        "x": 146,
+                        "y": 385
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AlertaMedia",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cono naranja3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 249,
+                        "y": 0
+                      },
+                      {
+                        "x": 419.5,
+                        "y": 634
+                      },
+                      {
+                        "x": 79,
+                        "y": 635.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AlertaMaxima",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cono rojo2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 248,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 250.5,
+                        "y": 3.5
+                      },
+                      {
+                        "x": 493.5,
+                        "y": 904
+                      },
+                      {
+                        "x": 7,
+                        "y": 902.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsGroups": [],
   "variables": [
     {
@@ -1277,70 +1714,6 @@
       "objects": [
         {
           "assetStoreId": "",
-          "name": "Personaje",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "Escondido",
-              "type": "boolean",
-              "value": false
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "maxSpeed": 300,
-              "acceleration": 400,
-              "allowDiagonals": true,
-              "angleOffset": 0,
-              "angularMaxSpeed": 180,
-              "customIsometryAngle": 30,
-              "deceleration": 800,
-              "ignoreDefaultControls": false,
-              "movementAngleOffset": 0,
-              "rotateObject": false,
-              "viewpoint": "TopDown"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\MC\\ladron.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
           "name": "Planta",
           "tags": "",
           "type": "Sprite",
@@ -1373,313 +1746,6 @@
                         "y": 216
                       },
                       "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "Guardia",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "Alerta",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "acceleration": 400,
-              "deceleration": 1000,
-              "allowDiagonals": true,
-              "angleOffset": 0,
-              "angularMaxSpeed": 180,
-              "customIsometryAngle": 30,
-              "ignoreDefaultControls": true,
-              "maxSpeed": 200,
-              "movementAngleOffset": 0,
-              "rotateObject": false,
-              "viewpoint": "TopDown"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Guardia\\guardia.png",
-                      "points": [
-                        {
-                          "name": "Alerta",
-                          "x": 251.5,
-                          "y": 0
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 486.5,
-                        "y": 291
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 487,
-                        "y": 297.5
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "Pared",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-              "cost": 5,
-              "impassable": true
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "aaa.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "Cono",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Normal",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Cono amarillo2.png2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 249,
-                            "y": 0
-                          },
-                          {
-                            "x": 353.5,
-                            "y": 387
-                          },
-                          {
-                            "x": 143.5,
-                            "y": 387
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "AlertaBaja",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Cono amarillo3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 250.5,
-                            "y": 0
-                          },
-                          {
-                            "x": 356,
-                            "y": 387
-                          },
-                          {
-                            "x": 146,
-                            "y": 385
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "AlertaMedia",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Cono naranja3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 249,
-                            "y": 0
-                          },
-                          {
-                            "x": 419.5,
-                            "y": 634
-                          },
-                          {
-                            "x": 79,
-                            "y": 635.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "AlertaMaxima",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Cono rojo2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 248,
-                        "y": 3.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 250.5,
-                            "y": 3.5
-                          },
-                          {
-                            "x": 493.5,
-                            "y": 904
-                          },
-                          {
-                            "x": 7,
-                            "y": 902.5
-                          }
-                        ]
-                      ]
                     }
                   ]
                 }
@@ -2411,12 +2477,234 @@
       "stopSoundsOnStartup": true,
       "title": "",
       "v": 209,
-      "uiSettings": {},
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.47535850871269464,
+        "windowMask": false
+      },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 911,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "3c841804-cd9d-4695-b9ea-60e6ea395237",
+          "width": 6130,
+          "x": -287,
+          "y": 1006,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1497,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "9072e8ee-1ec6-4abd-8d8e-3b71b106336d",
+          "width": 549,
+          "x": -519,
+          "y": -489,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 94,
+          "layer": "",
+          "name": "Personaje",
+          "persistentUuid": "347ad787-2b64-4edb-a34b-f8b8be2f0a3e",
+          "width": 94,
+          "x": 1065,
+          "y": 563,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1475,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "39993a9b-1903-4cfe-8d81-fcc27642f03b",
+          "width": 500,
+          "x": 1885,
+          "y": -445,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 500,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "2c109cf2-742d-4116-9c3e-fac0f8bc7293",
+          "width": 2113,
+          "x": -18,
+          "y": -470,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 251,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "81a0c4d1-ee70-436d-8b8e-facd64f47923",
+          "width": 44,
+          "x": 1303,
+          "y": -13,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "9c89e88d-93d5-4f5c-a216-001600d66f83",
+          "width": 0,
+          "x": 2831,
+          "y": -715,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "height": 618,
+          "layer": "",
+          "name": "Pared",
+          "persistentUuid": "3cdf3c0b-8f42-4ee0-af45-1a1f70262942",
+          "width": 44,
+          "x": 1590,
+          "y": 55,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 104,
+          "layer": "",
+          "name": "Puerta",
+          "persistentUuid": "43027557-a69d-4c1c-b927-449b94866c00",
+          "width": 44,
+          "x": 1303,
+          "y": 238,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Personaje",
+                "Pared",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Personaje",
+                "Pared",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Personaje",
+                "Puerta",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Puerta",
+                "abierta",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Personaje",
+                "Puerta",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 0,
@@ -2441,7 +2729,16 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
     },
     {
       "b": 209,
