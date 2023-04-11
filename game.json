@@ -44,7 +44,12 @@
       "showGDevelopSplash": true,
       "showProgressBar": true
     },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
     "authorIds": [],
+    "authorUsernames": [],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -155,6 +160,51 @@
         "name": "Assets\\Guardia\\Cono rojo.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Menu/NewSprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Menu\\NewSprite-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Menu/NewSprite-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Menu\\NewSprite-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Menu/NewSprite-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Menu\\NewSprite-1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Menu/NewSprite-1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Menu\\NewSprite-1-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Menu/NewSprite-1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Menu\\NewSprite-1-3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -172,6 +222,12 @@
           "name": "_Speed",
           "type": "number",
           "value": 100
+        },
+        {
+          "folded": true,
+          "name": "EstaEscondido",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -201,6 +257,210 @@
                     "y": 0
                   },
                   "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Guardia",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Alerta",
+          "type": "string",
+          "value": "Normal"
+        },
+        {
+          "folded": true,
+          "name": "NextPosition",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "_Speed",
+          "type": "number",
+          "value": 250
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets\\Guardia\\guardia.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "ConoGuardia",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Guardia\\Cono amarillo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 253.5,
+                    "y": 26.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 253.5,
+                        "y": 37.5
+                      },
+                      {
+                        "x": 452.5,
+                        "y": 585.5
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 585.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Guardia\\Cono naranja.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 248,
+                    "y": 8.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 249,
+                        "y": 9.5
+                      },
+                      {
+                        "x": 398,
+                        "y": 613.5
+                      },
+                      {
+                        "x": 98,
+                        "y": 611.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Assets\\Guardia\\Cono rojo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 40,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 249,
+                    "y": 6
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 248,
+                        "y": 18
+                      },
+                      {
+                        "x": 472,
+                        "y": 888
+                      },
+                      {
+                        "x": 21.5,
+                        "y": 889.5
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -396,7 +656,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1.png",
+                      "image": "Assets\\Menu\\NewSprite-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -437,7 +697,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1-0.png",
+                      "image": "Assets\\Menu\\NewSprite-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -500,7 +760,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1-1.png",
+                      "image": "Assets\\Menu\\NewSprite-1-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -541,7 +801,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1-2.png",
+                      "image": "Assets\\Menu\\NewSprite-1-2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -582,7 +842,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "NewSprite-1-3.png",
+                      "image": "Assets\\Menu\\NewSprite-1-3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -860,8 +1120,8 @@
           "name": "MC",
           "persistentUuid": "b62076d7-1212-4a93-bf25-8e82da621800",
           "width": 92,
-          "x": 762,
-          "y": 326,
+          "x": -89,
+          "y": 623,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -897,24 +1157,79 @@
           "name": "Guardia",
           "persistentUuid": "583e2e93-b0d3-4a2d-a05c-70c8470ef878",
           "width": 92,
-          "x": 1175,
-          "y": 387,
+          "x": 333,
+          "y": 873,
           "zOrder": 4,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 267.4618835449219,
+          "angle": 270,
           "customSize": false,
           "height": 0,
           "layer": "",
           "name": "ConoGuardia",
           "persistentUuid": "2a96b164-235e-425e-8fd4-51a09120b9ac",
           "width": 0,
-          "x": 1527.0272216796875,
-          "y": 156.91708374023438,
+          "x": 647,
+          "y": 759,
           "zOrder": 3,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Punto0",
+          "persistentUuid": "2b46b1e1-e441-4e97-a808-6a52be4ad8e5",
+          "width": 0,
+          "x": 167,
+          "y": 460,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Punto1",
+          "persistentUuid": "eebb3e37-04c8-4583-94ce-39ec13830955",
+          "width": 0,
+          "x": 901,
+          "y": 460,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Punto2",
+          "persistentUuid": "433bcb15-159e-4553-8345-7845de596fb3",
+          "width": 0,
+          "x": 1679,
+          "y": 460,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -964,143 +1279,36 @@
         },
         {
           "assetStoreId": "",
-          "name": "Guardia",
+          "name": "Punto0",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Guardia\\guardia.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "animations": []
         },
         {
           "assetStoreId": "",
-          "name": "ConoGuardia",
+          "name": "Punto1",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Guardia\\Cono amarillo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 253.8000030517578,
-                        "y": 29.700000762939453
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 253.8000030517578,
-                        "y": 29.700000762939453
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Guardia\\Cono naranja.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 254.25474548339844,
-                        "y": 32.6925048828125
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets\\Guardia\\Cono rojo.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 248.9442901611328,
-                        "y": 8.496731758117676
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "Punto2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
         }
       ],
       "events": [
@@ -1112,9 +1320,83 @@
           "target": "MC_Script"
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Guard_Script"
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "MovimientoGuardia",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Guardia",
+                    "Alerta",
+                    "=",
+                    "\"Normal\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Guardia",
+                        "NextPosition",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceVers"
+                      },
+                      "parameters": [
+                        "Guardia",
+                        "Punto0",
+                        "Guardia.Variable(_Speed)",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RotateTowardPosition"
+                      },
+                      "parameters": [
+                        "ConoGuardia",
+                        "Punto0.X()",
+                        "Punto0.Y()",
+                        "100",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -1376,6 +1658,134 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Proto1",
+      "lastChangeTimeStamp": 0,
+      "name": "Guard_Script",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "LineaDeVision",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "ConoGuardia",
+                    "=",
+                    "Guardia.CenterX()",
+                    "=",
+                    "Guardia.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "ConoGuardia",
+                    "=",
+                    "115"
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Deteccion",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Guardia",
+                        "Alerta",
+                        "=",
+                        "\"Normal\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "ConoGuardia",
+                            "MC",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "MC",
+                            "EstaEscondido",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ChangeColor"
+                          },
+                          "parameters": [
+                            "Guardia",
+                            "\"255;0;0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Guardia",
+                            "Alerta",
+                            "=",
+                            "\"Detectado\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
         }
       ]
     }
